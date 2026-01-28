@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>NSFAS Information - Templar Residence</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="NSFAS accommodation, student funding, bursary accommodation, NSFAS approved residence" name="keywords">
+    <meta content="NSFAS funding information for Templar Residence accommodation. Procedures, requirements, and support for NSFAS students" name="description">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* NSFAS Specific Styles */
+        .section-nsfas {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+
+        .nsfas-approved-banner {
+            background: linear-gradient(135deg, #F61446 0%, #1da156 100%);
+            color: white;
+            padding: 50px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(46, 202, 106, 0.3);
+            margin-bottom: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nsfas-approved-banner:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            opacity: 0.3;
+        }
+
+        .nsfas-approved-banner .banner-content i {
+            font-size: 4em;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .nsfas-approved-banner h2 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: white;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .nsfas-approved-banner p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .process-timeline {
+            position: relative;
+            margin: 60px 0;
+            padding: 30px 0;
+        }
+
+        .process-timeline:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #F61446 0%, #1da156 100%);
+            transform: translateY(-50%);
+            z-index: 1;
+            border-radius: 2px;
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            z-index: 2;
+        }
+
+        .timeline-step {
+            flex: 0 0 16%;
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #F61446;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-weight: bold;
+            font-size: 1.5em;
+            box-shadow: 0 5px 15px rgba(46, 202, 106, 0.4);
+            border: 4px solid white;
+            position: relative;
+            z-index: 2;
+        }
+
+        .step-content {
+            background: white;
+            padding: 25px 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            min-height: 200px;
+            transition: transform 0.3s ease;
+        }
+
+        .step-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .step-content h4 {
+            color: #F61446;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .step-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .step-content .btn {
+            margin-top: 10px;
+            padding: 8px 20px;
+            font-size: 0.9em;
+        }
+
+        .nsfas-coverage {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .coverage-item {
+            padding: 25px;
+            border-radius: 10px;
+            height: 100%;
+            margin-bottom: 20px;
+        }
+
+        .coverage-item.covered {
+            background: linear-gradient(135deg, #e9f9f0 0%, #d4f3e1 100%);
+            border: 2px solid #F61446;
+        }
+
+        .coverage-item.not-covered {
+            background: linear-gradient(135deg, #ffe9e9 0%, #ffd4d4 100%);
+            border: 2px solid #dc3545;
+        }
+
+        .coverage-item h5 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .coverage-item ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .coverage-item li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+            color: #555;
+        }
+
+        .coverage-item li:before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #F61446;
+            font-weight: bold;
+        }
+
+        .coverage-item.not-covered li:before {
+            color: #dc3545;
+        }
+
+        .nsfas-cap {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 25px;
+            border-left: 4px solid #F61446;
+        }
+
+        .nsfas-cap p {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .required-documents {
+            margin-bottom: 40px;
+        }
+
+        .document-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .document-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .document-icon {
+            color: #F61446;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .document-card h5 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .document-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .document-note {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border-left: 4px solid #ffc107;
+        }
+
+        .payment-schedule {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .payment-schedule table {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .payment-schedule th {
+            background: #F61446;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-weight: 600;
+        }
+
+        .payment-schedule td {
+            padding: 15px;
+            border-color: #eee;
+            vertical-align: middle;
+        }
+
+        .payment-schedule tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .payment-schedule .note {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            font-style: italic;
+        }
+
+        .support-services {
+            margin-bottom: 40px;
+        }
+
+        .support-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            height: 100%;
+            border-top: 4px solid #F61446;
+        }
+
+        .support-icon {
+            color: #F61446;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .support-card h5 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .support-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .important-notes {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .notes-list {
+            margin-top: 30px;
+        }
+
+        .note-item {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .note-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .note-item h5 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .note-item p {
+            color: #666;
+            line-height: 1.7;
+            padding-left: 35px;
+        }
+
+        .nsfas-contact {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .nsfas-contact h3 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .nsfas-contact p {
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 1.1em;
+        }
+
+        .contact-details {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+            text-align: left;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-details p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: #333;
+        }
+
+        .contact-details i {
+            color: #F61446;
+            width: 20px;
+        }
+
+        .external-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .external-links .btn {
+            padding: 12px 25px;
+            font-weight: 500;
+            min-width: 200px;
+        }
+
+        .nsfas-faq {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .faq-accordion {
+            margin-top: 30px;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 25px;
+            background: #f8f9fa;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: #e9f9f0;
+        }
+
+        .faq-question h5 {
+            color: #333;
+            margin: 0;
+            font-size: 1.1em;
+        }
+
+        .faq-question i {
+            color: #F61446;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 25px;
+            background: white;
+            border-top: 1px solid #eee;
+            display: none;
+        }
+
+        .faq-answer p {
+            color: #666;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .timeline {
+                flex-wrap: wrap;
+            }
+            
+            .timeline-step {
+                flex: 0 0 48%;
+                margin-bottom: 40px;
+            }
+            
+            .process-timeline:before {
+                display: none;
+            }
+            
+            .step-content {
+                min-height: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nsfas-approved-banner {
+                padding: 40px 20px;
+                margin-bottom: 40px;
+            }
+            
+            .nsfas-approved-banner h2 {
+                font-size: 2em;
+            }
+            
+            .timeline-step {
+                flex: 0 0 100%;
+            }
+            
+            .step-number {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3em;
+            }
+            
+            .nsfas-coverage,
+            .payment-schedule,
+            .important-notes,
+            .nsfas-faq,
+            .nsfas-contact {
+                padding: 30px 20px;
+            }
+            
+            .external-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .external-links .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .contact-details {
+                padding: 20px 15px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .nsfas-approved-banner {
+                padding: 30px 15px;
+            }
+            
+            .nsfas-approved-banner h2 {
+                font-size: 1.8em;
+            }
+            
+            .step-content {
+                padding: 20px 15px;
+            }
+            
+            .coverage-item {
+                padding: 20px 15px;
+            }
+            
+            .document-card,
+            .support-card {
+                padding: 25px 15px;
+            }
+            
+            .faq-question {
+                padding: 15px 20px;
+            }
+            
+            .faq-question h5 {
+                font-size: 1em;
+            }
+            
+            .faq-answer {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="click-closed"></div>
+    
+    <!-- Search Form -->
+    <div class="box-collapse">
+        <div class="title-box-d">
+            <h3 class="title-d">Search NSFAS Information</h3>
+        </div>
+        <span class="close-box-collapse right-boxed ion-ios-close"></span>
+        <div class="box-collapse-wrap form">
+            <form class="form-a">
+                <div class="row">
+                    <div class="col-md-12 mb-2">
+                        <div class="form-group">
+                            <label for="search">Search NSFAS Topics</label>
+                            <input type="text" class="form-control form-control-lg form-control-a" placeholder="What are you looking for?">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                            <label for="topic">Topic</label>
+                            <select class="form-control form-control-lg form-control-a" id="topic">
+                                <option>All Topics</option>
+                                <option>Application Process</option>
+                                <option>Coverage & Caps</option>
+                                <option>Required Documents</option>
+                                <option>Payment Schedule</option>
+                                <option>Contact Support</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                            <label for="student-type">Student Type</label>
+                            <select class="form-control form-control-lg form-control-a" id="student-type">
+                                <option>All Students</option>
+                                <option>New NSFAS Student</option>
+                                <option>Returning NSFAS Student</option>
+                                <option>First Time Applicant</option>
+                                <option>International Student</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-b">Search NSFAS Info</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+   <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <!-- <a class="navbar-brand text-brand" href="index.html">Templar<span class="color-b">Residence</span></a> -->
+      <a class="navbar-brand text-brand" href="index.html">
+        <img src="img/templar-kimberley-student-residence-logo.png" alt="Templar Residence Logo" class="logo">
+      </a>
+      <!-- <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-expanded="false">
+        <span class="fa fa-search" aria-hidden="true"></span>
+      </button> -->
+      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="facilities.html">Facilities</a>
+          </li>
+          <!-- <li class="nav-item">
+                    <a class="nav-link" href="fees.html">Fees & Payment</a>
+                </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="guidelines.html">Guidelines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nsfas.html">NSFAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="apply.html" style="color: #F61446; font-weight: bold;">Apply Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!--/ Intro Single star /-->
+    <section class="intro-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-8">
+                    <div class="title-single-box">
+                        <h1 class="title-single">NSFAS Information</h1>
+                        <span class="color-text-a">Funding Support for Students</span>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                NSFAS
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--/ NSFAS Content Star /-->
+    <section class="section-nsfas">
+        <div class="container">
+            <!-- NSFAS Approved Banner -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="nsfas-approved-banner">
+                        <div class="banner-content">
+                            <i class="fa fa-check-circle"></i>
+                            <h2>Templar Residence is NSFAS Approved</h2>
+                            <p>We welcome and support NSFAS-funded students with dedicated procedures and assistance for a seamless accommodation experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NSFAS Process -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="title-a text-center mb-5">NSFAS Application Process</h2>
+                    <div class="process-timeline">
+                        <div class="timeline">
+                            <div class="timeline-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Apply to NSFAS</h4>
+                                    <p>Submit your NSFAS application through the official NSFAS website or at your university's financial aid office.</p>
+                                    <a href="https://www.nsfas.org.za" target="_blank" class="btn btn-sm btn-c">NSFAS Website</a>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Receive NSFAS Award</h4>
+                                    <p>Wait for NSFAS to process your application and send you an award letter confirming your funding status.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Apply to Templar Residence</h4>
+                                    <p>Complete our online application form and upload your NSFAS award letter as proof of funding.</p>
+                                    <a href="apply.html" class="btn btn-sm btn-c">Apply Now</a>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Verification Process</h4>
+                                    <p>We verify your NSFAS status with both the university and NSFAS directly to confirm your funding.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-number">5</div>
+                                <div class="step-content">
+                                    <h4>Accommodation Offer</h4>
+                                    <p>Once verified, you'll receive a formal accommodation offer letter from Templar Residence.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-number">6</div>
+                                <div class="step-content">
+                                    <h4>NSFAS Payment</h4>
+                                    <p>NSFAS processes your accommodation fees directly to Templar Residence according to their payment schedule.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NSFAS Coverage -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="nsfas-coverage">
+                        <h3 class="title-c"><i class="fa fa-credit-card"></i> What NSFAS Covers</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="coverage-item covered">
+                                    <h5><i class="fa fa-check-circle color-b"></i> Covered by NSFAS</h5>
+                                    <ul>
+                                        <li>Accommodation fees (up to NSFAS accommodation cap)</li>
+                                        <li>Registration deposit (if applicable)</li>
+                                        <li>Basic utilities (water and electricity within limits)</li>
+                                        <li>Access to all residence facilities</li>
+                                        <li>Security and maintenance services</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="coverage-item not-covered">
+                                    <h5><i class="fa fa-times-circle color-d"></i> Not Covered by NSFAS</h5>
+                                    <ul>
+                                        <li>Damage deposits (refundable upon departure)</li>
+                                        <li>Personal bedding, linen, and kitchen items</li>
+                                        <li>Extra food and personal expenses</li>
+                                        <li>Travel costs to and from residence</li>
+                                        <li>Optional extras and additional services</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nsfas-cap">
+                            <p><strong>NSFAS Accommodation Cap for 2025:</strong> R45,000 per academic year</p>
+                            <p><em>Note: Our shared and single rooms fall within the NSFAS accommodation cap, making them fully covered for NSFAS students.</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Required Documents -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="required-documents">
+                        <h3 class="title-c"><i class="fa fa-file-text"></i> Required Documents for NSFAS Students</h3>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="document-card">
+                                    <div class="document-icon">
+                                        <i class="fa fa-file-pdf-o"></i>
+                                    </div>
+                                    <h5>NSFAS Award Letter</h5>
+                                    <p>Official NSFAS award/bursary letter confirming your accommodation allowance for the current academic year.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="document-card">
+                                    <div class="document-icon">
+                                        <i class="fa fa-id-card"></i>
+                                    </div>
+                                    <h5>ID Document</h5>
+                                    <p>Certified copy of your South African ID or valid passport (for international students with NSFAS funding).</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="document-card">
+                                    <div class="document-icon">
+                                        <i class="fa fa-graduation-cap"></i>
+                                    </div>
+                                    <h5>Proof of Registration</h5>
+                                    <p>Official proof of registration at Sol Plaatje University for the 2025 academic year from the university registrar.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="document-note">
+                            <p><strong>Important:</strong> All documents must be clear, legible scans or photos. Ensure your NSFAS award letter specifically mentions accommodation allowance. Documents must be in PDF, JPG, or PNG format and not exceed 5MB each.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NSFAS Payment Schedule -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="payment-schedule">
+                        <h3 class="title-c"><i class="fa fa-calendar"></i> NSFAS Payment Schedule</h3>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Payment Period</th>
+                                        <th>NSFAS Payment Date</th>
+                                        <th>Student Responsibility</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Initial Payment</td>
+                                        <td>February/March 2025</td>
+                                        <td>Submit all required documents on time and ensure university registration is complete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Second Payment</td>
+                                        <td>May/June 2025</td>
+                                        <td>Maintain satisfactory academic progress and update any changed information</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Final Payment</td>
+                                        <td>August/September 2025</td>
+                                        <td>Complete academic requirements and ensure no outstanding issues</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="note"><strong>Note:</strong> NSFAS payments are made directly to Templar Residence. Students do not handle the funds directly. Payment dates are approximate and subject to NSFAS processing times.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact NSFAS Support -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="nsfas-contact">
+                        <h3 class="title-c">NSFAS Support Contact</h3>
+                        <p>For NSFAS-specific queries and assistance at Templar Residence:</p>
+                        <div class="contact-details">
+                            <p><i class="fa fa-user"></i> <strong>NSFAS Liaison Officer:</strong> Ms. Nomvula Khumalo</p>
+                            <p><i class="fa fa-envelope"></i> nsfas@templarresidence.co.za</p>
+                            <p><i class="fa fa-phone"></i> +27 53 831 1234 (Extension 4)</p>
+                            <p><i class="fa fa-clock-o"></i> Monday-Friday: 9:00 AM - 4:00 PM</p>
+                        </div>
+                        <div class="external-links">
+                            <a href="https://www.nsfas.org.za" target="_blank" class="btn btn-b">
+                                <i class="fa fa-external-link"></i> Official NSFAS Website
+                            </a>
+                            <a href="https://www.spu.ac.za/financial-aid" target="_blank" class="btn btn-c">
+                                <i class="fa fa-university"></i> SPU Financial Aid Office
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--/ Footer Star /-->
+    <section class="section-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="widget-a">
+                        <div class="w-header-a">
+                            <h3 class="w-title-a text-brand">Templar<span class="color-b">Residence</span></h3>
+                        </div>
+                        <div class="w-body-a">
+                            <p class="w-text-a color-text-a">
+                                Crest Haven's largest student residence in the heart of Kimberley CBD. Accommodating up to 375 Sol Plaatje University students.
+                            </p>
+                        </div>
+                        <div class="w-footer-a">
+                            <ul class="list-unstyled">
+                                <li class="color-a">
+                                    <span class="color-text-a">Address: </span> 22-26 Bean Street, Kimberley</li>
+                                <li class="color-a">
+                                    <span class="color-text-a">Email: </span> info@templarresidence.co.za</li>
+                                <li class="color-a">
+                                    <span class="color-text-a">Phone: </span> +27 53 831 1234</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 section-md-t3">
+                    <div class="widget-a">
+                        <div class="w-header-a">
+                            <h3 class="w-title-a text-brand">Quick Links</h3>
+                        </div>
+                        <div class="w-body-a">
+                            <div class="w-body-a">
+                                <ul class="list-unstyled">
+                                    <li class="item-list-a">
+                                        <i class="fa fa-angle-right"></i> <a href="facilities.html">Facilities</a>
+                                    </li>
+                                    <li class="item-list-a">
+                                        <i class="fa fa-angle-right"></i> <a href="fees.html">Fees & Payment</a>
+                                    </li>
+                                    <li class="item-list-a">
+                                        <i class="fa fa-angle-right"></i> <a href="guidelines.html">Living Guidelines</a>
+                                    </li>
+                                    <li class="item-list-a">
+                                        <i class="fa fa-angle-right"></i> <a href="faq.html">FAQ</a>
+                                    </li>
+                                    <li class="item-list-a">
+                                        <i class="fa fa-angle-right"></i> <a href="nsfas.html">NSFAS</a>
+                                    </li>
+                                    <li class="item-list-a">
+                                        <i class="fa fa-angle-right"></i> <a href="apply.html">Apply Now</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 section-md-t3">
+                    <div class="widget-a">
+                        <div class="w-header-a">
+                            <h3 class="w-title-a text-brand">Important Documents</h3>
+                        </div>
+                        <div class="w-body-a">
+                            <ul class="list-unstyled">
+                                <li class="item-list-a">
+                                    <i class="fa fa-file-pdf-o"></i> <a href="documents/guidelines.pdf">Community Guidelines</a>
+                                </li>
+                                <li class="item-list-a">
+                                    <i class="fa fa-file-text"></i> <a href="lease-agreement.html">Lease Agreement</a>
+                                </li>
+                                <li class="item-list-a">
+                                    <i class="fa fa-download"></i> <a href="application-form.html">Application Form</a>
+                                </li>
+                                <li class="item-list-a">
+                                    <i class="fa fa-bank"></i> <a href="fees.html#banking">Banking Details</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="nav-footer">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="about.html">About</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="facilities.html">Facilities</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="fees.html">Fees</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="guidelines.html">Guidelines</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="socials-a">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copyright-footer">
+                        <p class="copyright color-text-a">
+                            &copy; Copyright 2025 <span class="color-a">Templar Residence</span>. All Rights Reserved.
+                            <br>Privately managed by Crest Haven Student Living
+                        </p>
+                    </div>
+                    <div class="accreditation">
+                        <p>Accredited Off-Campus Accommodation for Sol Plaatje University</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/ Footer End /-->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/popper/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/scrollreveal/scrollreveal.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        // FAQ accordion functionality
+        $('.faq-question').click(function() {
+            var $answer = $(this).next('.faq-answer');
+            var $item = $(this).parent('.faq-item');
+            var $icon = $(this).find('i');
+            
+            // Close all other answers
+            $('.faq-answer').not($answer).slideUp();
+            $('.faq-item').not($item).removeClass('active');
+            $('.faq-question i').not($icon).removeClass('fa-rotate-180');
+            
+            // Toggle current answer
+            $answer.slideToggle();
+            $item.toggleClass('active');
+            $icon.toggleClass('fa-rotate-180');
+        });
+
+        // Smooth scrolling for timeline steps
+        $('.timeline-step').click(function() {
+            var stepNumber = $(this).find('.step-number').text();
+            alert('Step ' + stepNumber + ' clicked. This would typically show more detailed information about this specific step.');
+        });
+
+        // Add animation to document cards on hover
+        $('.document-card, .support-card').hover(
+            function() {
+                $(this).css('transform', 'translateY(-10px)');
+            },
+            function() {
+                $(this).css('transform', 'translateY(0)');
+            }
+        );
+
+        // Add loading animation to external links
+        $('.external-links .btn').click(function(e) {
+            if ($(this).attr('target') === '_blank') {
+                e.preventDefault();
+                var url = $(this).attr('href');
+                $(this).html('<i class="fa fa-spinner fa-spin"></i> Opening...');
+                setTimeout(function() {
+                    window.open(url, '_blank');
+                }, 500);
+                setTimeout(function() {
+                    $(this).html('<i class="fa fa-external-link"></i> Official NSFAS Website');
+                }.bind(this), 1000);
+            }
+        });
+    });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us - Templar Residence</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="contact Templar Residence, student accommodation contact, Kimberley student residence" name="keywords">
+    <meta content="Contact Templar Residence for accommodation inquiries, applications, maintenance issues, or general information" name="description">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Contact Page Specific Styles */
+        .section-contact {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+
+        .contact-info-grid {
+            margin-bottom: 50px;
+        }
+
+        .info-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            height: 100%;
+            transition: all 0.3s ease;
+            border-top: 5px solid #F61446;
+        }
+
+        .info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .info-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #F61446 0%, #1da156 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 2em;
+            box-shadow: 0 5px 20px rgba(46, 202, 106, 0.3);
+        }
+
+        .info-card h4 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+        }
+
+        .info-card p {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        .info-card strong {
+            color: #333;
+            font-weight: 600;
+        }
+
+        .contact-form-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            height: 100%;
+        }
+
+        .contact-form-card h3 {
+            color: #333;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #F61446;
+        }
+
+        .contact-form-card .form-group {
+            margin-bottom: 25px;
+        }
+
+        .contact-form-card .form-control {
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        .contact-form-card .form-control:focus {
+            border-color: #F61446;
+            box-shadow: 0 0 0 0.2rem rgba(46, 202, 106, 0.25);
+        }
+
+        .contact-form-card textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .contact-form-card .form-check-input:checked {
+            background-color: #F61446;
+            border-color: #F61446;
+        }
+
+        .contact-form-card .form-check-label a {
+            color: #F61446;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-form-card .form-check-label a:hover {
+            text-decoration: underline;
+        }
+
+        .map-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            height: 100%;
+        }
+
+        .map-card h3 {
+            color: #333;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #F61446;
+        }
+
+        .map-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .map-container iframe {
+            display: block;
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        .directions {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .directions h5 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .directions p {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .department-contacts {
+            margin: 50px 0;
+        }
+
+        .dept-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            height: 100%;
+            border-left: 4px solid #F61446;
+            transition: transform 0.3s ease;
+        }
+
+        .dept-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .dept-card h5 {
+            color: #F61446;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .dept-card p {
+            color: #666;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+
+        .dept-card i {
+            color: #F61446;
+            width: 20px;
+        }
+
+        .emergency-contacts {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 50px 0;
+            border-left: 5px solid #ffc107;
+        }
+
+        .emergency-contacts h3 {
+            color: #856404;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .emergency-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            height: 100%;
+            border-top: 3px solid #ffc107;
+        }
+
+        .emergency-card h5 {
+            color: #856404;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .emergency-card p {
+            color: #666;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .business-hours {
+            margin: 50px 0;
+        }
+
+        .hours-table {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 30px;
+            border-bottom: 1px solid #eee;
+            transition: background-color 0.3s ease;
+        }
+
+        .hours-row:hover {
+            background-color: #f8f9fa;
+        }
+
+        .hours-row:last-child {
+            border-bottom: none;
+        }
+
+        .hours-row.holiday {
+            background: #fff3cd;
+            color: #856404;
+            font-weight: 500;
+        }
+
+        .hours-day {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .hours-time {
+            color: #F61446;
+            font-weight: 500;
+        }
+
+        .response-info {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .response-times {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .response-item {
+            flex: 0 0 22%;
+            text-align: center;
+            padding: 25px 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .response-item:hover {
+            background: #e9f9f0;
+            transform: translateY(-5px);
+        }
+
+        .response-item h5 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .response-item p {
+            color: #666;
+            margin: 0;
+            font-size: 0.95em;
+        }
+
+        /* Form Status Messages */
+        .form-status {
+            display: none;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .form-status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .form-status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .info-card {
+                margin-bottom: 30px;
+            }
+            
+            .contact-form-card,
+            .map-card {
+                margin-bottom: 30px;
+            }
+            
+            .response-item {
+                flex: 0 0 45%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-form-card,
+            .map-card,
+            .emergency-contacts,
+            .response-info {
+                padding: 30px 20px;
+            }
+            
+            .info-card {
+                padding: 30px 20px;
+            }
+            
+            .dept-card {
+                margin-bottom: 20px;
+            }
+            
+            .emergency-card {
+                margin-bottom: 20px;
+            }
+            
+            .hours-row {
+                padding: 15px 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .hours-day {
+                margin-bottom: 5px;
+            }
+            
+            .response-item {
+                flex: 0 0 100%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .contact-form-card,
+            .map-card {
+                padding: 25px 15px;
+            }
+            
+            .info-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5em;
+            }
+            
+            .info-card h4 {
+                font-size: 1.2em;
+            }
+            
+            .emergency-contacts {
+                padding: 25px 15px;
+            }
+            
+            .response-info {
+                padding: 25px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="click-closed"></div>
+    
+    <!-- Search Form -->
+    <!-- <div class="box-collapse">
+        <div class="title-box-d">
+            <h3 class="title-d">Search Contact Info</h3>
+        </div>
+        <span class="close-box-collapse right-boxed ion-ios-close"></span>
+        <div class="box-collapse-wrap form">
+            <form class="form-a">
+                <div class="row">
+                    <div class="col-md-12 mb-2">
+                        <div class="form-group">
+                            <label for="search">Search Contact Info</label>
+                            <input type="text" class="form-control form-control-lg form-control-a" placeholder="What are you looking for?">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                            <label for="department">Department</label>
+                            <select class="form-control form-control-lg form-control-a" id="department">
+                                <option>All Departments</option>
+                                <option>Administration</option>
+                                <option>Applications</option>
+                                <option>Finance</option>
+                                <option>Maintenance</option>
+                                <option>NSFAS Support</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                            <label for="contact-type">Contact Type</label>
+                            <select class="form-control form-control-lg form-control-a" id="contact-type">
+                                <option>Any Contact</option>
+                                <option>Email</option>
+                                <option>Phone</option>
+                                <option>Visit</option>
+                                <option>Emergency</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-b">Search Contact</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div> -->
+
+    <!-- Navigation -->
+ <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+            aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+         <!-- <a class="navbar-brand text-brand" href="index.html">Templar<span class="color-b">Residence</span></a> -->
+        <a class="navbar-brand text-brand" href="index.html">
+          <img src="img/templar-kimberley-student-residence-logo.png" alt="Templar Residence Logo" class="logo">
+       </a>
+        <!-- <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
+            data-target="#navbarTogglerDemo01" aria-expanded="false">
+            <span class="fa fa-search" aria-hidden="true"></span>
+        </button> -->
+        <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="facilities.html">Facilities</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="fees.html">Fees & Payment</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="guidelines.html">Guidelines</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nsfas.html">NSFAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="apply.html" style="color: #F61446; font-weight: bold;">Apply Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!--/ Intro Single star /-->
+    <section class="intro-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-8">
+                    <div class="title-single-box">
+                        <h1 class="title-single">Contact Us</h1>
+                        <span class="color-text-a">Get in Touch with Templar Residence</span>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                Contact
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--/ Contact Content Star /-->
+    <section class="section-contact">
+        <div class="container">
+            <!-- Contact Information -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contact-info-grid">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="info-card">
+                                    <div class="info-icon">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                    <h4>Visit Us</h4>
+                                    <p>
+                                        <strong>Templar Residence</strong><br>
+                                        22-26 Bean Street<br>
+                                        Kimberley, 8301<br>
+                                        Northern Cape, South Africa
+                                    </p>
+                                    <p class="mt-3">
+                                        <i class="fa fa-building-o"></i> In the heart of Kimberley CBD<br>
+                                        <i class="fa fa-university"></i> Near Sol Plaatje University
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="info-card">
+                                    <div class="info-icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <h4>Call Us</h4>
+                                    <p>
+                                        <strong>Main Office:</strong> +27 53 831 1234<br>
+                                        <strong>Emergency:</strong> +27 83 456 7890<br>
+                                        <strong>Fax:</strong> +27 53 831 1235
+                                    </p>
+                                    <p class="mt-3">
+                                        <i class="fa fa-clock-o"></i> Office Hours:<br>
+                                        Monday-Friday: 8:00 AM - 5:00 PM<br>
+                                        Saturday: 9:00 AM - 12:00 PM
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="info-card">
+                                    <div class="info-icon">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <h4>Email Us</h4>
+                                    <p>
+                                        <strong>General Inquiries:</strong> info@templarresidence.co.za<br>
+                                        <strong>Applications:</strong> applications@templarresidence.co.za<br>
+                                        <strong>Finance:</strong> finance@templarresidence.co.za<br>
+                                        <strong>Maintenance:</strong> maintenance@templarresidence.co.za
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form & Map -->
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="contact-form-card">
+                        <h3 class="title-c">Send Us a Message</h3>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" placeholder="Your Name *" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" placeholder="Your Email *" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <input type="tel" name="phone" class="form-control" placeholder="Your Phone Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <select name="department" class="form-control" required>
+                                            <option value="">Select Department *</option>
+                                            <option value="applications">Applications & Admissions</option>
+                                            <option value="finance">Finance & Payments</option>
+                                            <option value="maintenance">Maintenance & Facilities</option>
+                                            <option value="nsfas">NSFAS & Funding</option>
+                                            <option value="general">General Inquiry</option>
+                                            <option value="complaint">Complaint</option>
+                                            <option value="suggestion">Suggestion</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <div class="form-group">
+                                        <input type="text" name="subject" class="form-control" placeholder="Subject *" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" placeholder="Your Message *" rows="6" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="privacyPolicy" required>
+                                            <label class="form-check-label" for="privacyPolicy">
+                                                I agree to the <a href="privacy.html">Privacy Policy</a> *
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn btn-b btn-lg">
+                                        <i class="fa fa-paper-plane"></i> Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="formStatus" class="form-status"></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="map-card">
+                        <h3 class="title-c">Find Us</h3>
+                        <div class="map-container">
+                            <!-- Google Map Embed -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3482.893346116028!2d24.758215315095164!3d-28.72805198240756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9b21f2b0c4b4a1%3A0x1234567890abcdef!2sBean%20St%2C%20Kimberley%2C%208301!5e0!3m2!1sen!2sza!4v1621234567890!5m2!1sen!2sza" 
+                                    width="100%" 
+                                    height="300" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                            </iframe>
+                        </div>
+                        <div class="directions">
+                            <h5><i class="fa fa-map-signs"></i> Directions:</h5>
+                            <p>Located in Kimberley CBD, off Du Toitspan Road. Easily accessible from Sol Plaatje University and major shopping centers.</p>
+                            <a href="https://maps.google.com/?q=22-26+Bean+Street+Kimberley" target="_blank" class="btn btn-sm btn-c">
+                                <i class="fa fa-map"></i> Get Directions on Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Department Contacts -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="title-c text-center mb-5">Department Contacts</h3>
+                    <div class="department-contacts">
+                        <div class="row">
+                            <div class="col-md-3 mb-4">
+                                <div class="dept-card">
+                                    <h5><i class="fa fa-users"></i> Administration</h5>
+                                    <p><strong>Manager:</strong> Sarah Johnson</p>
+                                    <p><i class="fa fa-envelope"></i> admin@templarresidence.co.za</p>
+                                    <p><i class="fa fa-phone"></i> Ext. 1</p>
+                                    <p><i class="fa fa-clock-o"></i> Mon-Fri: 8:00-17:00</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="dept-card">
+                                    <h5><i class="fa fa-graduation-cap"></i> Applications</h5>
+                                    <p><strong>Officer:</strong> David Williams</p>
+                                    <p><i class="fa fa-envelope"></i> applications@templarresidence.co.za</p>
+                                    <p><i class="fa fa-phone"></i> Ext. 2</p>
+                                    <p><i class="fa fa-clock-o"></i> Mon-Fri: 8:30-16:30</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="dept-card">
+                                    <h5><i class="fa fa-money"></i> Finance</h5>
+                                    <p><strong>Officer:</strong> Maria Rodriguez</p>
+                                    <p><i class="fa fa-envelope"></i> finance@templarresidence.co.za</p>
+                                    <p><i class="fa fa-phone"></i> Ext. 3</p>
+                                    <p><i class="fa fa-clock-o"></i> Mon-Fri: 8:30-16:30</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="dept-card">
+                                    <h5><i class="fa fa-wrench"></i> Maintenance</h5>
+                                    <p><strong>Manager:</strong> James Smith</p>
+                                    <p><i class="fa fa-envelope"></i> maintenance@templarresidence.co.za</p>
+                                    <p><i class="fa fa-phone"></i> Ext. 4</p>
+                                    <p><i class="fa fa-clock-o"></i> Mon-Fri: 7:30-16:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Emergency Contacts -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="emergency-contacts">
+                        <h3 class="title-c"><i class="fa fa-exclamation-triangle"></i> Emergency Contacts</h3>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="emergency-card">
+                                    <h5><i class="fa fa-shield"></i> On-Site Security</h5>
+                                    <p><strong>24/7 Emergency:</strong> +27 83 456 7890</p>
+                                    <p><strong>Control Room:</strong> Extension 100</p>
+                                    <p><strong>Location:</strong> Ground Floor Reception</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="emergency-card">
+                                    <h5><i class="fa fa-ambulance"></i> Medical Emergency</h5>
+                                    <p><strong>Ambulance:</strong> 10177</p>
+                                    <p><strong>Kimberley Hospital:</strong> +27 53 802 9111</p>
+                                    <p><strong>Nearest Clinic:</strong> Galeshewe Day Hospital</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="emergency-card">
+                                    <h5><i class="fa fa-fire"></i> Fire & Rescue</h5>
+                                    <p><strong>Emergency:</strong> 10177</p>
+                                    <p><strong>Fire Department:</strong> +27 53 830 6200</p>
+                                    <p><strong>Police:</strong> 10111</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Hours -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="business-hours">
+                        <h3 class="title-c text-center mb-4">Office Hours</h3>
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="hours-table">
+                                    <div class="hours-row">
+                                        <div class="hours-day">Monday - Thursday</div>
+                                        <div class="hours-time">8:00 AM - 5:00 PM</div>
+                                    </div>
+                                    <div class="hours-row">
+                                        <div class="hours-day">Friday</div>
+                                        <div class="hours-time">8:00 AM - 4:00 PM</div>
+                                    </div>
+                                    <div class="hours-row">
+                                        <div class="hours-day">Saturday</div>
+                                        <div class="hours-time">9:00 AM - 12:00 PM</div>
+                                    </div>
+                                    <div class="hours-row">
+                                        <div class="hours-day">Sunday</div>
+                                        <div class="hours-time">Closed</div>
+                                    </div>
+                                    <div class="hours-row holiday">
+                                        <div class="hours-day">Public Holidays</div>
+                                        <div class="hours-time">Closed</div>
+                                    </div>
+                                </div>
+                                <p class="text-center mt-3"><em>For emergencies outside office hours, contact on-site security at +27 83 456 7890</em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Response Time -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="response-info">
+                        <h3 class="title-c text-center">Our Response Commitment</h3>
+                        <p class="text-center color-text-a">We are committed to responding to all inquiries promptly</p>
+                        <div class="response-times">
+                            <div class="response-item">
+                                <h5><i class="fa fa-envelope color-b"></i> Email Inquiries</h5>
+                                <p>Response within 24-48 hours</p>
+                            </div>
+                            <div class="response-item">
+                                <h5><i class="fa fa-phone color-b"></i> Phone Calls</h5>
+                                <p>Answered during office hours</p>
+                            </div>
+                            <div class="response-item">
+                                <h5><i class="fa fa-wrench color-b"></i> Maintenance Requests</h5>
+                                <p>Attended to within 24 hours</p>
+                            </div>
+                            <div class="response-item">
+                                <h5><i class="fa fa-exclamation color-b"></i> Emergencies</h5>
+                                <p>Immediate response</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--/ Footer Star /-->
+    <section class="section-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="widget-a">
+                        <div class="w-header-a">
+                            <h3 class="w-title-a text-brand">Templar<span class="color-b">Residence</span></h3>
+                        </div>
+                        <div class="w-body-a">
+                            <p class="w-text-a color-text-a">
+                                Crest Haven's largest student residence in the heart of Kimberley CBD. Accommodating up to 375 Sol Plaatje University students.
+                            </p>
+                        </div>
+                        <div class="w-footer-a">
+                            <ul class="list-unstyled">
+                                <li class="color-a">
+                                    <span class="color-text-a">Address: </span> 22-26 Bean Street, Kimberley</li>
+                                <li class="color-a">
+                                    <span class="color-text-a">Email: </span> info@templarresidence.co.za</li>
+                                <li class="color-a">
+                                    <span class="color-text-a">Phone: </span> +27 53 831 1234</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 section-md-t3">
+                    <div class="widget-a">
+                        <div class="w-header-a">
+                            <h3 class="w-title-a text-brand">Quick Links</h3>
+                        </div>
+                        <div class="w-body-a">
+                            <div class="w-body-a">
+                                <ul class="list-unstyled">
+                                    <li class="item-list-a">
+                                        <i class="fa fa-angle-right"></i> <a href="facilities.html">Facilities</a>
+                                    </li>
+                                    <li class="item-list-a">
+                                        <i class="fa fa-angle-right"></i> <a href="fees.html">Fees & Payment</a>
+                                    </li>
+                                    <li class="item-list-a">
+                                        <i class="fa fa-angle-right"></i> <a href="guidelines.html">Living Guidelines</a>
+                                    </li>
+                                    <li class="item-list-a">
+                                        <i class="fa fa-angle-right"></i> <a href="faq.html">FAQ</a>
+                                    </li>
+                                    <li class="item-list-a">
+                                        <i class="fa fa-angle-right"></i> <a href="nsfas.html">NSFAS</a>
+                                    </li>
+                                    <li class="item-list-a">
+                                        <i class="fa fa-angle-right"></i> <a href="apply.html">Apply Now</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 section-md-t3">
+                    <div class="widget-a">
+                        <div class="w-header-a">
+                            <h3 class="w-title-a text-brand">Important Documents</h3>
+                        </div>
+                        <div class="w-body-a">
+                            <ul class="list-unstyled">
+                                <li class="item-list-a">
+                                    <i class="fa fa-file-pdf-o"></i> <a href="documents/guidelines.pdf">Community Guidelines</a>
+                                </li>
+                                <li class="item-list-a">
+                                    <i class="fa fa-file-text"></i> <a href="lease-agreement.html">Lease Agreement</a>
+                                </li>
+                                <li class="item-list-a">
+                                    <i class="fa fa-download"></i> <a href="application-form.html">Application Form</a>
+                                </li>
+                                <li class="item-list-a">
+                                    <i class="fa fa-bank"></i> <a href="fees.html#banking">Banking Details</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="nav-footer">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="about.html">About</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="facilities.html">Facilities</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="fees.html">Fees</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="guidelines.html">Guidelines</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="socials-a">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copyright-footer">
+                        <p class="copyright color-text-a">
+                            &copy; Copyright 2025 <span class="color-a">Templar Residence</span>. All Rights Reserved.
+                            <br>Privately managed by Crest Haven Student Living
+                        </p>
+                    </div>
+                    <div class="accreditation">
+                        <p>Accredited Off-Campus Accommodation for Sol Plaatje University</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/ Footer End /-->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/popper/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/scrollreveal/scrollreveal.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        // Contact form submission
+        $('#contactForm').submit(function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            var formData = {
+                name: $('input[name="name"]').val(),
+                email: $('input[name="email"]').val(),
+                phone: $('input[name="phone"]').val(),
+                department: $('select[name="department"]').val(),
+                subject: $('input[name="subject"]').val(),
+                message: $('textarea[name="message"]').val()
+            };
+            
+            // Simple validation
+            if (!formData.name || !formData.email || !formData.department || !formData.subject || !formData.message) {
+                showFormStatus('Please fill in all required fields.', 'error');
+                return;
+            }
+            
+            // Show loading state
+            var submitBtn = $(this).find('button[type="submit"]');
+            var originalText = submitBtn.html();
+            submitBtn.html('<i class="fa fa-spinner fa-spin"></i> Sending...');
+            submitBtn.prop('disabled', true);
+            
+            // Simulate form submission (in a real scenario, this would be an AJAX call)
+            setTimeout(function() {
+                // Reset form
+                $('#contactForm')[0].reset();
+                
+                // Show success message
+                showFormStatus('Thank you for your message! We will get back to you within 24-48 hours.', 'success');
+                
+                // Reset button
+                submitBtn.html(originalText);
+                submitBtn.prop('disabled', false);
+                
+                // Scroll to status message
+                $('html, body').animate({
+                    scrollTop: $('#formStatus').offset().top - 100
+                }, 500);
+            }, 1500);
+        });
+        
+        function showFormStatus(message, type) {
+            var statusDiv = $('#formStatus');
+            statusDiv.removeClass('success error').addClass(type);
+            statusDiv.html('<strong>' + (type === 'success' ? 'Success!' : 'Error!') + '</strong> ' + message);
+            statusDiv.slideDown();
+            
+            // Auto-hide after 5 seconds
+            setTimeout(function() {
+                statusDiv.slideUp();
+            }, 5000);
+        }
+        
+        // Add hover effects to department cards
+        $('.dept-card').hover(
+            function() {
+                $(this).css('box-shadow', '0 10px 25px rgba(0,0,0,0.15)');
+            },
+            function() {
+                $(this).css('box-shadow', '0 5px 20px rgba(0,0,0,0.08)');
+            }
+        );
+        
+        // Add click handler for emergency cards
+        $('.emergency-card').click(function() {
+            var title = $(this).find('h5').text();
+            var numbers = $(this).find('p').map(function() {
+                return $(this).text();
+            }).get();
+            
+            alert('Emergency Contact: ' + title + '\n\n' + numbers.join('\n'));
+        });
+        
+        // Google Maps link handler
+        $('.directions .btn').click(function(e) {
+            e.preventDefault();
+            var url = $(this).attr('href');
+            window.open(url, '_blank', 'noopener,noreferrer');
+        });
+    });
+    </script>
+
+</body>
+</html>
